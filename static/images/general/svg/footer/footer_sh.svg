@@ -1,0 +1,11 @@
+<svg class="footer" id="svg-images" xmlns="http://www.w3.org/2000/svg" 
+viewBox="0 0 1920.01 519.38"
+height="100%"
+width="100%">
+    <defs>
+        <linearGradient id="a" x1="960" x2="960" y2="810.74" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#d1ffdb"/><stop offset=".35" stop-color="#77f993"/><stop offset="1" stop-color="#22da4a"/></linearGradient>
+    </defs>
+    <g data-name="Layer 2">
+        <path fill="url(#a)" d="M0 3.56v515.82h1920V0C1920 121.6 0 121.6 0 3.56z" data-name="Layer 1"/>
+    </g>
+</svg>

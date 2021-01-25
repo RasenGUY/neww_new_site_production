@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920.04 1584.74">
+  <defs/>
+  <defs>
+    <linearGradient id="a" x1="1027.55" x2="751.81" y1="-399.39" y2="4380.18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22b2da"/>
+      <stop offset=".06" stop-color="#42bdde"/>
+      <stop offset=".14" stop-color="#69cae3"/>
+      <stop offset=".22" stop-color="#88d5e7"/>
+      <stop offset=".29" stop-color="#9ddcea"/>
+      <stop offset=".37" stop-color="#abe0eb"/>
+      <stop offset=".44" stop-color="#afe2ec"/>
+      <stop offset="1" stop-color="#eef9fc"/>
+    </linearGradient>
+    <linearGradient id="b" x1="252.31" x2="-23.43" y1="-444.12" y2="4335.46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#da4a22"/>
+      <stop offset=".25" stop-color="#ec5b33"/>
+      <stop offset="1" stop-color="#ffbdaa"/>
+    </linearGradient>
+  </defs>
+  <g data-name="Layer 2">
+    <g data-name="Layer 1">
+      <path fill="url(#a)" d="M1920 0v1440.69c-218.85 137.42-508.81 78.87-818.36 20.31-262.43-49.65-537.95-99.1-796.32-29.22-105.3 28.47-207.76 76.77-305.32 153v-451.6V100.92c171.25-98.53 359.89 25.62 445.19 60.38C1082.42 420.59 1519.34 0 1920 0z"/>
+      <!-- <path fill="url(#b)" d="M305.38 1431.78c-105.3 28.47-207.76 76.77-305.32 153v-451.6H0c166.45-.04 301.77 133.05 305.38 298.6z"/> -->
+    </g>
+  </g>
+</svg>
