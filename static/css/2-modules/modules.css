@@ -441,7 +441,7 @@ section .shapes object.mobile, section .shapes object.medium {
 
 #index-hero {
   background-attachment: initial;
-  background-image: url("/static/images/home/jpeg_web/compressed/teach_2.jpg");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/jpeg_web/compressed/teach_2.jpg");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -450,7 +450,7 @@ section .shapes object.mobile, section .shapes object.medium {
 @media only screen and (max-width: 412px) {
   #index-hero {
     background-attachment: initial;
-    background-image: url("/static/images/home/jpeg_mobile/teach_2.jpg");
+    background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/jpeg_mobile/teach_2.jpg");
     background-origin: border-box;
     background-position: center;
     background-repeat: no-repeat;
@@ -490,7 +490,7 @@ section .shapes object.mobile, section .shapes object.medium {
 
 #index-s-one .shapes .circles > .circle:nth-child(3) {
   background-attachment: initial;
-  background-image: url("/static/images/home/jpeg_web/compressed/teach_6.jpg");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/jpeg_web/compressed/teach_6.jpg");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -517,7 +517,7 @@ section .shapes object.mobile, section .shapes object.medium {
 
 #index-s-two {
   background-attachment: initial;
-  background-image: url("/static/images/home/jpeg_web/compressed/travel_5.jpg");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/jpeg_web/compressed/travel_5.jpg");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -526,7 +526,7 @@ section .shapes object.mobile, section .shapes object.medium {
 @media only screen and (max-width: 412px) {
   #index-s-two {
     background-attachment: initial;
-    background-image: url("/static/images/home/jpeg_mobile/travel_2.jpg");
+    background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/jpeg_mobile/travel_2.jpg");
     background-origin: border-box;
     background-position: center;
     background-repeat: no-repeat;
@@ -561,7 +561,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member > a h4.t
 }
 section#index-s-three div.text-box > div.body .team-members > li.member:nth-child(1) > a div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/team/compressed/hong.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/team/compressed/hong.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -569,7 +569,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 section#index-s-three div.text-box > div.body .team-members > li.member:nth-child(2) > a div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/team/compressed/ly.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/team/compressed/ly.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -577,7 +577,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 section#index-s-three div.text-box > div.body .team-members > li.member:nth-child(3) > a div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/team/compressed/eva.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/team/compressed/eva.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -585,7 +585,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 section#index-s-three div.text-box > div.body .team-members > li.member:nth-child(4) > a div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/team/compressed/fernando.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/team/compressed/fernando.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -594,7 +594,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 
 #index-s-four {
   background-attachment: initial;
-  background-image: url("/static/images/home/jpeg_web/compressed/experience_4.jpg");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/jpeg_web/compressed/experience_4.jpg");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -603,7 +603,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 @media only screen and (max-width: 412px) {
   #index-s-four {
     background-attachment: initial;
-    background-image: url("/static/images/home/jpeg_mobile/experience_4.jpg");
+    background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/jpeg_mobile/experience_4.jpg");
     background-origin: border-box;
     background-position: center;
     background-repeat: no-repeat;
@@ -686,7 +686,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:first-child a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/anne.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/anne.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -697,7 +697,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(2) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/tobias.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/tobias.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -716,7 +716,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(3) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/eva.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/eva.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -743,7 +743,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(4) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/daniella.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/daniella.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -762,7 +762,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(5) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/chuck.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/chuck.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -786,7 +786,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(6) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/johana.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/johana.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -810,7 +810,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(7) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/karen.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/karen.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -834,7 +834,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(8) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/marion.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/marion.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
@@ -858,7 +858,7 @@ section#index-s-three div.text-box > div.body .team-members > li.member:nth-chil
 }
 #index-s-five .wrapper .text-box.reviews-section .body ul.reviews li:nth-child(9) a > div.mugshot {
   background-attachment: initial;
-  background-image: url("/static/images/home/pngs/reviews/compressed/oksana.png");
+  background-image: url("https://rasenguy.github.io/neww_new_site_production/static/images/home/pngs/reviews/compressed/oksana.png");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
