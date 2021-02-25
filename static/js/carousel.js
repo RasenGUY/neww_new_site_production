@@ -71,7 +71,7 @@ export function Carousel(carousel){  // object instance function carousel functi
         setTimeout(() => {
             this.moving = false
         }, 500);
-    }
+    };
     
     // main carousel function 
     this.moveCarouselTo = () => {
@@ -119,7 +119,7 @@ export function Carousel(carousel){  // object instance function carousel functi
             this.items[newNext].className = this.itemClassName + " next";
 
         }
-    }
+    };
 
     // initialize
     this.initCarousel = () => {
@@ -129,9 +129,9 @@ export function Carousel(carousel){  // object instance function carousel functi
         
         // set moving to false
         this.moving = false;
-    }
+    };
     
-}
+};
 
 
 

@@ -1,6 +1,5 @@
 // all js functions used in the newworld site
 
-// general 
 // function for toggling pseudo elements on and off
 export function togglePseudo(htmlEl, pseudo, cssRule){ //function for animating pseudo-elements 
      
@@ -30,7 +29,7 @@ export function togglePseudo(htmlEl, pseudo, cssRule){ //function for animating 
     else {
 
         // add child
-        var el = document.createElement("style");
+        let el = document.createElement("style");
         el.innerHTML = pseudoEl;
         console.log(el);
         document.querySelector("head").appendChild(el);
@@ -39,63 +38,83 @@ export function togglePseudo(htmlEl, pseudo, cssRule){ //function for animating 
     return 0;
 };
 
-// function for animating menu
-export function animateMenu(){
-
-    // variables to animate 
-    var navBtm = document.querySelector("nav#nav-mobile");
-    var linksUl = document.querySelector("ul.nav-links-bottom");
-    var burger = document.querySelector(".hamburger .burger");
-    var burgerTop = document.querySelector(".burger-top");
-    var burgerMiddle = document.querySelector(".burger-middle");
-    var burgerBottom = document.querySelector(".burger-bottom");
-    
-    // toggle class
-    linksUl.classList.toggle("animate");
-    burger.classList.toggle("animate-burger-border");
-    burgerTop.classList.toggle("animate-top");
-    burgerMiddle.classList.toggle("hide");
-    burgerBottom.classList.toggle("animate-bottom");
-    navBtm.classList.toggle("animate");
-    
-
-    // remove attributes
-    // navBtm.style.removeProperty("box-shadow");
-
-    // toggle psuedoattributes
-    var htmlEl = "nav#nav-mobile-links";
-    var cssRule = "transform: translateY(-5.5rem);"
-    var pseudo = "::before"
-    togglePseudo(htmlEl, pseudo, cssRule);
-};
-
 // function for doing media queries on site 
-export function medQueries(width, minMax){
+export function medQueries(minMax, width){
     
     let query = null; 
+
     // max or min
-    if (minMax == ">"){ // if min then create min-width query
+    if (minMax === ">"){ // if min then create min-width query
         query = `(min-width: ${width})`;
     }
-    else if (minMax == "<"){ // if min then create max-width query
+    else if (minMax === "<"){ // if min then create max-width query
         query = `(max-width: ${width})`;
     }
-
     // initialize and listen to changes on page
     return window.matchMedia(query);
 };
 
 // queries for index page
-export function queriesIndex(window){
-    
-    // select elements
-    // section one
-    const sOneTopRCir = document.querySelector("#index-s-one .shapes .circles .wrapper > div:nth-child(1)");
+export function callQueries(window, callBack, reverse){
 
+    // will execute callBack and reverseFunction on matched or unmatched window
     if (window.matches){ // section one 
-        
-    } else {
-
+        callBack(); 
+    } 
+    else {
+        reverse(); 
     }
-    return;
+
+    return 0;
 };
+
+export function removeChilds(parent){
+    console.log("removing children");
+    while (parent.lastChild) {
+        parent.removeChild(parent.lastChild);
+    }
+};
+
+// mutationObserver -> creates instance of element observer and executes given callBack function -> returns the created instance
+export function observeEl(el, config, callBack) {
+    
+    const observerCallB = (mutationList, observer) => { // check for changes in DOM el
+        
+        // loop trough mutationlist and call the callBackfunction  
+        for (const mutation of mutationList){
+            
+            // call callback if child has been added or removed
+            if (mutation.type === 'childList') {
+                callBack();
+            }
+        }
+    }
+    
+    return {config: config, el: el, inst: new MutationObserver(observerCallB), lb: null}; // create new observer obj instance 
+}
+
+// loader function 
+export function loaderFunc(ldrObj){
+    // function that starts loader or removes loader 
+    
+    // select loader
+    const loader = document.querySelector(ldrObj.sel);
+
+    // deactivate loader if settings is deactivate
+    if (ldrObj.deactivate == "deactivate"){
+        
+        // hide loader and remove settings to parent element
+        loader.classList.toggle(ldrObj.deactivate);
+        loader.parentElement.classList.remove(ldrObj.parentSettings);
+    
+    // activate if settings are not deactivate
+    } else {
+        // select and add settings to inject target 
+        const injTarget = document.querySelector(ldrObj.injectTarget)
+        injTarget.classList.append(ldrObj.parentSettings);
+        loader.classList.toggle(ldrObj.deactivate);
+        injTarget.append(loader);
+    }
+    
+    return 0;
+}

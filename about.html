@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- libraries -->
+    <script src="https://kit.fontawesome.com/77ede35369.js" crossorigin="anonymous"></script> <!-- font awesome icons  -->
+
+    
+    <!-- <link rel="stylesheet" href="/static/css/main.css"> main css -->
+    <link rel="stylesheet" href="/static/css/0-base/base.css"> <!-- base css -->
+    <link rel="stylesheet" href="/static/css/1-layout/layout.css"> <!-- layout css -->
+    <link rel="stylesheet" href="/static/css/2-modules/modules.css"> <!-- modules css -->
+
+</head>
+<body class="loader-settings">
+    <!-- loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    </div>
+
+    <!-- navigation -->
+    <nav id="nav-web" class="blur">
+        <div class="wrapper l-flex items-align-center">
+            <div class="f-item logo">
+                <!-- logo-side -->
+                <!-- logo -->
+                <a href="/">
+                    <img src="/static/images/logo/logo.png" alt="new world logo">
+                </a>
+            </div> <!-- end logo -->
+            
+            <!--links  -->
+            <ul class="nav-links f-item l-flex content-justify-between items-align-center">  
+                <li>
+                    <!-- https://goo.gl/forms/42PxcOgwkW21OsGr2 -->
+                    <a href="#" class="btn">Join us!</a> <!-- apply button--> 
+                </li>
+                <li class="active">
+                    <a href="/index.html#index-s-one" class="capitalize">teach</a>
+                </li>
+                <li>
+                    <a href="/index.html#index-s-two" class="capitalize">travel</a>
+                </li>
+                <li>
+                    <a href="/index.html#index-s-four" class="capitalize">experience</a>
+                </li>
+                <li>
+                    <a href="/index.html#index-s-five" class="capitalize">contact</a>
+                </li>
+                <li>
+                    <a href="/gallery.html" class="capitalize">gallery</a>
+                </li>
+                <li>
+                    <a href="/about.html" class="capitalize">about</a>
+                </li>
+            </ul>
+
+            <!-- mobile links -->
+            <div class="nav-links-mob-top f-item l-flex content-justify-right items-align-center">
+                <a href="#" class="btn">Join us!</a> 
+            </div>
+        </div>
+
+    </nav>
+    
+    <nav id="nav-mobile">
+
+        <!-- wrapper-bottom-menu -->
+        <div class="wrapper l-flex items-align-center">
+    
+            <!-- social icons -->
+            <ul class="social f-item l-flex items-align-center content-justify-between"> 
+                <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            
+            
+            <!--hamburger -->
+            <div class="hamburger f-item l-flex items-align-center content-justify-right" onclick="animateMenu()">
+                <div class="burger l-flex col content-justify-center items-align-center">
+                    <div class="burger-top">
+                    </div>
+                    <div class="burger-middle">
+                    </div>
+                    <div class="burger-bottom">
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    </nav>
+
+    <nav id="nav-mobile-links">
+        
+        <!-- links bottom -->
+        <ul class="nav-links-bottom">
+            <li class="active">
+                <a href="/index.html#index-s-one" class="capitalize">teach</a>
+            </li>
+            <li>
+                <a href="index.html#index-s-two" class="capitalize">travel</a>
+            </li>
+            <li>
+                <a href="index.html#index-s-four" class="capitalize">experience</a>
+            </li>
+            <li>
+                <a href="/index.html#index-s-five" class="capitalize">contact</a>
+            </li>
+            <li>
+                <a href="/gallery.html" class="capitalize">gallery</a>
+            </li>
+            <li>
+                <a href="/about.html" class="capitalize">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main"> <!-- main -->
+
+        <section id="about-s1" class="l-grid"> <!-- section one -->
+            <div class="shapes">
+                <object class="large" alt="background" data="/static/images/about/svg_web/compressed/about_sh_bg_lg.svg" type="image/svg+xml"></object> <!-- shapes --> 
+                <object class="medium" alt="background" data="/static/images/about/svg_web/compressed/about_sh_bg_lg.svg" type="image/svg+xml"></object> <!-- shapes --> 
+                <object class="mobile" alt="background" data="/static/images/about/svg_mobile/compressed/about_sh_bg_mob.svg" type="image/svg+xml"></object> <!-- shapes --> 
+            </div>
+
+            <div class="wrapper g-item justify-center l-flex col">
+                <div class="text-box story f-item l-flex wrap items-align-center">
+                    <div class="paragraph f-item t-align left l-flex col content-justify-left">
+                        <header class="anim type:from set|y:-=50|opacity:0">
+                            <h1 class="capitalize text shadow">our <span class="primary">story</span></h1>
+                        </header>
+                        <div class="body anim type:from set|x:-=50|opacity:0">
+                            <p class="text">The <span class="primary">New </span><span class="secondary">World</span> International English Center is an ESL school located in Thai Binh district (North Vietnam). We provide affordable classes to kids of all ages. This is achieved through the application of an array of games, workshops and ESL lessons, with the help from a number of foreign ESL teachers. 
+                            </p>
+                            <p class="text">We opened the first English center in Kiến Xương, Thai Binh. Our second school is located in Thái Thụy, Thai Binh. Our main center which is them most successfull, is located in Thai Binh city and it's our main center of operations.</p>
+                        </div>
+                    </div> <!-- our mission -->
+                    <div class="image-box f-item anim type:from set|x:+=100|opacity:0">
+                        <object class="svg-image shadow-fg" data="/static/images/about/svg_web/compressed/about_sh_pic_1.svg" type="image/svg+xml" alt="topImage"></object> <!-- image  -->
+                    </div>
+                </div>
+                <div class="text-box mission f-item l-flex wrap items-align-left">
+                    <div class="image-box f-item anim type:from set|x:-=100|opacity:0">
+                        <object data="/static/images/about/svg_web/compressed/about_sh_pic_2.svg" type="image/svg+xml" alt="bottomImage" class="shadow-fg"></object>
+                    </div>
+                    
+                    <div class="paragraph f-item t-align right">
+                        <header class="anim type:from set|y:-=50|opacity:0">
+                            <h1 class="capitalize"><span class="text shadow">our</span> mission</h1>
+                        </header>
+                        <div class="body anim type:from set|x:+=50|opacity:0">
+                            <p class="tertiary">Our mission is to provide very affordable English lessons for students regardless of their social background (rich and poor). New World recognizes the importance of the English language and the opportunity it provides for people in the labor market that’s why we continue to work hard provide children with the opportunity to learn English. Our long term goal is to reach the ethnic minorities in the outskirts of Thai Binh and provide English lessons to all.</p>
+                        </div>
+                    </div>
+                    <div class="image-box f-item">
+                        <object data="/static/images/about/svg_web/compressed/about_sh_pic_2.svg" type="image/svg+xml" alt="bottomImage" class="shadow-fg"></object>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="l-grid"><!-- footer -->
+            
+            <!-- shapes  -->
+            <div class="shapes">
+                <object class="svg-image" type="image/svg+xml" width="100%" height="100%" data="/static/images/general/svg/compressed/footer_sh.svg"></object>
+            </div>
+            
+            <!-- wrapper -->
+            <div class="wrapper g-item justify-center align-center l-grid">
+                <ul class="footer-links l-flex content-justify-between"> <!-- internal footer links -->
+                    <li>
+                        <a class="text" href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="text" href="/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="text" href="https://goo.gl/forms/42PxcOgwkW21OsGr2">Join us</a>
+                    </li>
+                </ul>
+                <ul class="social g-item justify-center l-flex items-justify-between"> <!-- social-media -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright t-align center">
+                    <p><span>&copy;</span> 2020 New World Education .co .ltd - all rights reserved</p>                    
+                </div>
+            </div>
+            
+        </footer>
+    </main> <!-- end main -->
+    
+    <!-- GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+    
+    <!-- js -->
+    <script type="module" src="/static/js/main.js"></script> <!-- main -->
+</body>
+</html>

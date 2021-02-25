@@ -1,0 +1,21 @@
+/* #svg-images.home-s1 {
+        
+  // home-section-1 svg image 
+  & .img-stroke {
+
+      fill: red;
+  }
+  &:hover .img-stroke {
+      transition: all 0.5s linear;  
+
+      fill: green;
+  }
+}  */
+
+.border {
+  fill: red;
+}
+#svg-images.home-s1:hover .img-stroke {
+  transition: all 0.5s linear;
+  fill: green;
+}

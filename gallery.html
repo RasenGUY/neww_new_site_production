@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- libraries -->
+    <script src="https://kit.fontawesome.com/77ede35369.js" crossorigin="anonymous"></script> <!-- font awesome icons  -->
+    <script src="https://cdn.jsdelivr.net/gh/andreknieriem/simplelightbox@master/dist/simple-lightbox.min.js?v2.7.0"></script> <!-- simpleLightBox  -->
+    
+    <!-- gallery lightbox -->
+    <link rel="stylesheet" href="/static/css/2-modules/simple-lightbox.css"> <!-- base css -->
+    
+   
+    <!-- <link rel="stylesheet" href="/static/css/main.css"> main css -->
+    <link rel="stylesheet" href="/static/css/0-base/base.css"> <!-- base css -->
+    <link rel="stylesheet" href="/static/css/1-layout/layout.css"> <!-- layout css -->
+    <link rel="stylesheet" href="/static/css/2-modules/modules.css"> <!-- modules css -->
+
+
+</head>
+<body class="loader-settings">
+    
+    <!-- loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- navigation -->
+    <nav id="nav-web" class="blur">
+        <div class="wrapper l-flex items-align-center">
+            <div class="f-item logo">
+                <!-- logo-side -->
+                <!-- logo -->
+                <a href="/">
+                    <img src="/static/images/logo/logo.png" alt="new world logo">
+                </a>
+            </div> <!-- end logo -->
+            
+            <!--links  -->
+            <ul class="nav-links f-item l-flex content-justify-between items-align-center">  
+                <li>
+                    <!-- https://goo.gl/forms/42PxcOgwkW21OsGr2 -->
+                    <a href="#" class="btn">Join us!</a> <!-- apply button--> 
+                </li>
+                <li class="active">
+                    <a href="/index.html#index-s-one" class="capitalize">teach</a>
+                </li>
+                <li>
+                    <a href="/index.html#index-s-two" class="capitalize">travel</a>
+                </li>
+                <li>
+                    <a href="/index.html#index-s-four" class="capitalize">experience</a>
+                </li>
+                <li>
+                    <a href="/index.html#index-s-five" class="capitalize">contact</a>
+                </li>
+                <li>
+                    <a href="/gallery.html" class="capitalize">gallery</a>
+                </li>
+                <!-- <li>
+                    <a href="/blog_list.html" class="capitalize">blog</a>
+                </li> -->
+                <li>
+                    <a href="/about.html" class="capitalize">about</a>
+                </li>
+            </ul>
+
+            <!-- mobile links -->
+            <div class="nav-links-mob-top f-item l-flex content-justify-right items-align-center">
+                <a href="#" class="btn">Join us!</a> 
+            </div>
+        </div>
+
+    </nav>
+    
+    <nav id="nav-mobile">
+
+        <!-- wrapper-bottom-menu -->
+        <div class="wrapper l-flex items-align-center">
+    
+            <!-- social icons -->
+            <ul class="social f-item l-flex items-align-center content-justify-between"> 
+                <li>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
+            
+            
+            <!--hamburger -->
+            <div class="hamburger f-item l-flex items-align-center content-justify-right" onclick="animateMenu()">
+                <div class="burger l-flex col content-justify-center items-align-center">
+                    <div class="burger-top">
+                    </div>
+                    <div class="burger-middle">
+                    </div>
+                    <div class="burger-bottom">
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    </nav>
+
+    <nav id="nav-mobile-links">
+        
+        <!-- links bottom -->
+        <ul class="nav-links-bottom">
+            <li class="active">
+                <a href="/index.html#index-s-one" class="capitalize">teach</a>
+            </li>
+            <li>
+                <a href="/index.html#index-s-two" class="capitalize">travel</a>
+            </li>
+            <li>
+                <a href="/index.html#index-s-four" class="capitalize">experience</a>
+            </li>
+            <li>
+                <a href="/index.html#index-s-five" class="capitalize">contact</a>
+            </li>
+            <li>
+                <a href="/gallery.html" class="capitalize">gallery</a>
+            </li>
+            <!-- <li>
+                <a href="/blog_list.html" class="capitalize">blog</a>
+            </li> -->
+            <li>
+                <a href="/about.html" class="capitalize">about</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main"> <!-- main -->
+
+        <section id="gallery-hero" class="l-grid"> <!-- section one hero section -->
+            <div class="bg-image"></div>
+            <div class="g-item align-center justify-center wrapper l-flex items-align-center content-justify-center"> <!-- wrapper -->
+                <div class="text-box l-flex col items-align-center content-justify-center">
+                    <header>
+                        <h1 class='to-upper shadow'>Explore <span class="primary">New</span><span class="secondary"> World</span></h1> <!-- heading -->
+                    </header>
+                </div>
+            </div>
+            <div class="overlay"></div><!-- overlay -->
+        </section> <!-- index-hero section -->
+
+        <section id="gallery-s-gallery" class="l-grid"> <!-- container for the gallery -->
+            <!-- <div class="shapes">
+                <div class="box"></div>
+            </div> -->
+            <div class="wrapper g-item align-center justify-center wrapper l-flex wrap"> <!-- wrapper of gallery --> 
+                <!-- inject created gallery in here -->
+            </div>
+        </section>
+
+
+        
+        <footer class="l-grid"><!-- footer -->
+            <!-- shapes  -->
+            <div class="shapes">
+                <object class="svg-image" type="image/svg+xml" width="100%" height="100%" data="/static/images/general/svg/compressed/footer_sh.svg"></object>
+            </div>
+            
+            <!-- wrapper -->
+            <div class="wrapper g-item justify-center align-center l-grid">
+                <ul class="footer-links l-flex content-justify-between"> <!-- internal footer links -->
+                    <li>
+                        <a class="text" href="/about.html">About</a>
+                    </li>
+                    <li>
+                        <a class="text" href="/gallery.html">Gallery</a>
+                    </li>
+                    <li>
+                        <a class="text" href="https://goo.gl/forms/42PxcOgwkW21OsGr2">Join us</a>
+                    </li>
+                </ul>
+                <ul class="social g-item justify-center l-flex items-justify-between"> <!-- social-media -->
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright t-align center">
+                    <p><span>&copy;</span> 2020 New World Education .co .ltd - all rights reserved</p>                    
+                </div>
+            </div>
+            
+        </footer>
+        
+    </main> <!-- end main -->
+    
+    
+    <!-- js -->
+    <script defer type="module" src="/static/js/main.js"></script> <!-- main -->
+
+    
+</body>
+</html>

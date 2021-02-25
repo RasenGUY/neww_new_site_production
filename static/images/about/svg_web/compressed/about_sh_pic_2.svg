@@ -1,0 +1,15 @@
+<?xml-stylesheet type="text/css" href="../../../../css/2-modules/modules.css"?>
+<svg class="about-s1 svg-image" id="svg-images" 
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 0 706.01 548.8"
+height="100%"
+width="100%">
+  <defs>
+    <clipPath id="clip-path">
+      <path d="M698.5 325.75c-.23 73.2-153.8 210.65-404 215.55-158.11 0-287-119.73-287-266.9C7.5 124.8 133.59 7.62 294.58 7.5c174.13 5.07 220.77 104.32 258.26 184.07 23.48 49.97 45.66 97.17 96.42 98.5 32.76.86 49.33 12.87 49.25 35.68z"/>
+    </clipPath>
+  </defs>
+  <path class="border" d="M698.5 325.75c-.23 73.2-153.8 210.65-404 215.55-158.11 0-287-119.73-287-266.9C7.5 124.8 133.59 7.62 294.58 7.5c174.13 5.07 220.77 104.32 258.26 184.07 23.48 49.97 45.66 97.17 96.42 98.5 32.76.86 49.33 12.87 49.25 35.68z" stroke="#22da4a" stroke-miterlimit="10" stroke-width="15"/>
+  <image href="../../jpeg/compressed/about_1.jpg" x="0" y="0" width="140%" clip-path="url(#clip-path)"/>
+</svg>

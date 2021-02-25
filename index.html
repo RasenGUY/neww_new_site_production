@@ -7,51 +7,56 @@
 
     <!-- libraries -->
     <script src="https://kit.fontawesome.com/77ede35369.js" crossorigin="anonymous"></script> <!-- font awesome icons  -->
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUVnVeHuvq12QTIG6cjXMG3qZ-mGA9DQU&callback=initMap"></script><!-- google map -->
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUVnVeHuvq12QTIG6cjXMG3qZ-mGA9DQU"></script><!-- google map -->
+
     
     <!-- <link rel="stylesheet" href="/static/css/main.css"> main css -->
-    <link rel="stylesheet" href="https://rasenguy.github.io/neww_new_site_production/static/css/0-base/base.css"> <!-- base css -->
-    <link rel="stylesheet" href="https://rasenguy.github.io/neww_new_site_production/static/css/2-modules/modules.css"> <!-- modules css -->
-    <link rel="stylesheet" href="https://rasenguy.github.io/neww_new_site_production/static/css/1-layout/layout.css"> <!-- layout css -->
+    <link rel="stylesheet" href="/static/css/0-base/base.css"> <!-- base css -->
+    <link rel="stylesheet" href="/static/css/1-layout/layout.css"> <!-- layout css -->
+    <link rel="stylesheet" href="/static/css/2-modules/modules.css"> <!-- modules css -->
 
 </head>
-<body>
+<body class="loader-settings">
+    <!-- loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"> 
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    </div>
 
     <!-- navigation -->
-    <nav id="nav-web">
-
+    <nav id="nav-web" class="blur">
         <div class="wrapper l-flex items-align-center">
             <div class="f-item logo">
-                <!-- logo-side -->
                 <!-- logo -->
-                <a href="https://rasenguy.github.io/neww_new_site_production/index.html">
-                    <img src="https://rasenguy.github.io/neww_new_site_production/static/images/logo/logo.png" alt="new world logo">
+                <a href="/">
+                    <img src="/static/images/png/logo/logo.png" alt="new world logo">
                 </a>
             </div> <!-- end logo -->
-    
+            
             <!--links  -->
             <ul class="nav-links f-item l-flex content-justify-between items-align-center">  
                 <li>
-                    <!-- https://goo.gl/forms/42PxcOgwkW21OsGr2 -->
-                    <a href="#" class="btn">Join us!</a> <!-- apply button--> 
+                    <a href="https://goo.gl/forms/42PxcOgwkW21OsGr2" class="btn">Join us!</a> <!-- apply button--> 
                 </li>
                 <li class="active">
-                    <a href="#section-1" class="capitalize">teach</a>
+                    <a data-href="#index-s-one" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">teach</a>
                 </li>
                 <li>
-                    <a href="#section-2" class="capitalize">travel</a>
+                    <a data-href="#index-s-two" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">travel</a>
                 </li>
                 <li>
-                    <a href="#section-3" class="capitalize">experience</a>
+                    <a data-href="#index-s-four" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">experience</a>
                 </li>
                 <li>
-                    <a href="/contact.html" class="capitalize">contact</a>
+                    <a data-href="#index-s-five" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">contact</a>
                 </li>
                 <li>
-                    <a href="/gallery.html" class="capitalize">gallery</a>
-                </li>
-                <li>
-                    <a href="/blog_list.html" class="capitalize">blog</a>
+                    <a href="/gallery.html" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">gallery</a>
                 </li>
                 <li>
                     <a href="/about.html" class="capitalize">about</a>
@@ -63,6 +68,7 @@
                 <a href="#" class="btn">Join us!</a> 
             </div>
         </div>
+
     </nav>
     
     <nav id="nav-mobile">
@@ -102,26 +108,27 @@
     </nav>
 
     <nav id="nav-mobile-links">
+        
         <!-- links bottom -->
         <ul class="nav-links-bottom">
             <li class="active">
-                <a href="#section-1" class="capitalize">teach</a>
+                <a data-href="#index-s-one" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">teach</a>
             </li>
             <li>
-                <a href="#section-2" class="capitalize">travel</a>
+                <a data-href="#index-s-two" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">travel</a>
             </li>
             <li>
-                <a href="#section-3" class="capitalize">experience</a>
+                <a data-href="#index-s-four" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">experience</a>
             </li>
             <li>
-                <a href="/contact.html" class="capitalize">contact</a>
+                <a data-href="#index-s-five" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">contact</a>
             </li>
             <li>
-                <a href="/gallery.html" class="capitalize">gallery</a>
+                <a href="/gallery.html" class="capitalize anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">gallery</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="/blog_list.html" class="capitalize">blog</a>
-            </li>
+            </li> -->
             <li>
                 <a href="/about.html" class="capitalize">about</a>
             </li>
@@ -131,6 +138,7 @@
     <main id="main"> <!-- main -->
 
         <section id="index-hero" class="l-grid"> <!-- section one hero section -->
+            <div class="bg-image"></div>
             <div class="g-item align-center justify-center wrapper l-flex items-align-center content-justify-center"> <!-- wrapper -->
                 <div class="text-box l-flex col items-align-center content-justify-center">
                     <header>
@@ -138,49 +146,50 @@
                     </header>
                     <div class="body">
                         <div class="arrows l-flex col">
-                            <a href="#home-section-1" class="upper-arrow">
-                                <img src="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_mobile/compressed/arrow.svg" alt="">
+                            <a data-href="#index-s-one" class="upper-arrow anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">
+                                <img src="/static/images/svg/compressed/arrow_mob.svg" alt="">
                             </a>
             
-                            <a href="#home-section-1" class="lower-arrow">
-                                <img src="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_mobile/compressed/arrow.svg" alt="">
+                            <a data-href="#index-s-one" class="lower-arrow anim type:scroll scrollSet|duration:1.5|ease:circ.inOut">
+                                <img src="/static/images/svg/compressed/arrow_mob.svg" alt="">
                             </a>
                         </div> <!--arrows-->  
                     </div>
                 </div>
             </div>
-
             <div class="overlay"></div><!-- overlay -->
         </section> <!-- index-hero section -->
 
         <section id="index-s-one" class="l-grid"><!-- section one teach-->
             <div class="shapes">
                 <div class="folder"> <!-- folder shape-->
+                    
                     <!-- large -->
-                    <object class="back large svg-image" type="image/svg+xml" alt="folder-bg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_web/compressed/home_sh_s2_bg.svg" width="100%"></object>
-                    <object class="middle large svg-image" type="image/svg+xml" alt="folder-mg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_web/compressed/home_sh_s2_mg.svg" width="100%"></object>
-                    <object class="fore large svg-image" type="image/svg+xml" alt="folder-fg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_web/compressed/home_sh_s2_fg.svg" width="100%"></object>
+                    <object class="back large svg-image" type="image/svg+xml" alt="folder-bg" data="/static/images/svg/compressed/index_s2_sh_folder_bg_lg.svg" width="100%"></object>
+                    <object class="middle large svg-image" type="image/svg+xml" alt="folder-mg" data="/static/images/svg/compressed/index_s2_sh_folder_mid_lg.svg" width="100%"></object>
+                    <object class="fore large svg-image" type="image/svg+xml" alt="folder-fg" data="/static/images/svg/compressed/index_s2_sh_folder_fg_lg.svg" width="100%"></object>
 
                     <!-- medium -->
-                    <object class="back medium svg-image" type="image/svg+xml" alt="folder-bg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_medium/compressed/index_medium_sh_s1_back.svg" width="100%"></object>
-                    <object class="middle medium svg-image" type="image/svg+xml" alt="folder-mg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_medium/compressed/index_medium_sh_s1_middle.svg" width="100%"></object>
-                    <object class="fore medium svg-image" type="image/svg+xml" alt="folder-fg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_medium/compressed/index_medium_sh_s1_fore.svg" width="100%"></object>
+                    <object class="back medium svg-image" type="image/svg+xml" alt="folder-bg" data="/static/images/svg/compressed/index_s2_sh_folder_bg_med.svg" width="100%"></object>
+                    <object class="middle medium svg-image" type="image/svg+xml" alt="folder-mg" data="/static/images/svg/compressed/index_s2_sh_folder_mid_med.svg" width="100%"></object>
+                    <object class="fore medium svg-image" type="image/svg+xml" alt="folder-fg" data="/static/images/svg/compressed/index_s2_sh_folder_fg_med.svg" width="100%"></object>
                     
                     <!-- mobile -->
-                    <object class="back mobile svg-image" type="image/svg+xml" alt="folder-bg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_mobile/compressed/mobile_home_sh_s1_bg.svg" width="100%"></object>
-                    <object class="middle mobile svg-image" type="image/svg+xml" alt="folder-mg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_mobile/compressed/mobile_home_sh_s1_mg.svg" width="100%"></object>
-                    <object class="fore mobile svg-image" type="image/svg+xml" alt="folder-fg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_mobile/compressed/mobile_home_sh_s1_fg.svg" width="100%"></object>
+                    <object class="back mobile svg-image" type="image/svg+xml" alt="folder-bg" data="/static/images/svg/compressed/index_s2_sh_folder_bg_mob.svg" width="100%"></object>
+                    <object class="middle mobile svg-image" type="image/svg+xml" alt="folder-mg" data="/static/images/svg/compressed/index_s2_sh_folder_mid_mob.svg" width="100%"></object>
+                    <object class="fore mobile svg-image" type="image/svg+xml" alt="folder-fg" data="/static/images/svg/compressed/index_s2_sh_folder_fg_mob.svg" width="100%"></object>
                     
                 </div>
                 <div class="circles"><!-- circles  -->
-                    <div class="circle lg"></div>   
-                    <div class="circle xs"></div>       
-                    <div class="circle xl"></div>
+                    <div class="circle lg anim type:from set|x:-=100|y:-=100|opacity:0"></div>   
+                    <div class="circle xs anim type:from set|x:+=50|y:-=145|opacity:0"></div>       
+                    <div class="circle xl anim type:from set|x:+=50|y:-=145|opacity:0"></div>
+                    <!-- type:fromTo setFrom|x:10|y:90|opacity:1 setTo|x:10|y:90|opacity:1 -->
                 </div>
             </div>
             <div class="g-item align-center justify-center wrapper l-flex col"> <!-- texbox wrapper -->
                 
-                <div class="text-box l-flex col">
+                <div class="text-box l-flex col anim type:from set|x:-=100|opacity:0">
                     <header>
                         <h1 class="to-upper shadow">gain <span class="text">teaching experience!</span></h1> <!-- heading -->
                     </header>
@@ -212,7 +221,7 @@
                 <div class="img-box-wrapper l-flex content-justify-center">
                     <div class="image-box">
                         <div class="spacer widest"></div>
-                        <object class="svg-image shadow-fg" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_web/compressed/home_s1_teach_5.svg" type="image/svg+xml"></object>
+                        <object class="svg-image shadow-fg" data="/static/images/svg/compressed/index_s1-img_1_web.svg" type="image/svg+xml"></object>
                     </div>
                 </div>
             </div>
@@ -220,15 +229,16 @@
 
         <!-- section two travel-->
         <section id="index-s-two" class="l-grid">
+            <div class="bg-image"></div>
             <div class="g-item align-center justify-center wrapper l-flex items-align-center">
                 <div class="text-box t-align right">
-                    <header>
+                    <header class="anim type:from set|x:+=100|opacity:0">
                         <h1 class="to-upper shadow">explore <span class="primary">vietnam</span></h1>
                         <div class="spacer wide"></div>
                     </header>
-                    <div class="body">
+                    <div class="body anim type:from set|x:+=100|opacity:0">
                         <h3>Weekends off, this means that you will have plenty of time for exploring Vietnam. Places that are close to where we center is located, include Ninh Binh, Hai Phong, Ha Long Bay and Ha Noi. Furthermore, occasionally go on school trips to faraway places (ex. Quanh Binh and Sapa amongst others).</h3>
-                        <div>
+                        <div class="anim type:from set|y:-=100|opacity:0">
                             <div class="spacer widest"></div>
                             <a href="/gallery.html" class="btn large primary">Gallery</a>
                         </div>
@@ -241,19 +251,19 @@
         <!-- section three the team-->
         <section id="index-s-three" class="l-grid">
             <div class="shapes">
-                <object class="index-s-three-sh-1 large svg-image" type="image/svg+xml" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_web/compressed/home_sh_s3.svg" width="100%"></object>
-                <object class="index-s-three-sh-1 medium svg-image" type="image/svg+xml" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_medium/compressed/index_medium_sh_s3.svg" width="100%"></object>
-                <object class="index-s-three-sh-1 mobile svg-image" type="image/svg+xml" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_medium/compressed/index_medium_sh_s3.svg" width="100%"></object>
+                <object class="index-s-three-sh-1 large svg-image" type="image/svg+xml" data="/static/images/svg/compressed/index_s3_sh_lg.svg" width="100%"></object> 
+                <object class="index-s-three-sh-1 medium svg-image" type="image/svg+xml" data="/static/images/svg/compressed/index_s3_sh_med.svg" width="100%"></object>
+                <object class="index-s-three-sh-1 mobile svg-image" type="image/svg+xml" data="/static/images/svg/compressed/index_s3_sh_med.svg" width="100%"></object>
             </div>
 
             <div class="g-item align-center justify-center wrapper l-flex">
                 <div class="f-item align-center text-box l-flex col content-justify-start items-align-evenly">
-                    <header class="f-item align-center">
+                    <header class="f-item align-center anim type:from set|y:+=50|opacity:0">
                         <h1 class="to-upper text shadow">the <span class="primary"> team</span></h1>
                         <div class="spacer wider"></div>
                     </header>
                     
-                    <div class="body"><!-- team members row --> 
+                    <div class="body anim type:from set|y:-=50|opacity:0"><!-- team members row --> 
                         
                         <!-- carousel -->
                         <div class="carousel-wrapper l-grid items-justify-center">
@@ -344,15 +354,16 @@
 
         <!-- section four experience-->
         <section id="index-s-four" class="l-grid">
+            <div class="bg-image"></div>
             <div class="g-item align-center justify-center wrapper l-flex items-align-center">
                 <div class="text-box t-align left">
-                    <header>
+                    <header class="anim type:from set|x:-=100|opacity:0">
                         <h1 class="to-upper shadow">experience <span class="primary">vietnamese</span> culture</h1>
                         <div class="spacer wide"></div>
                     </header>
-                    <div class="body">
+                    <div class="body anim type:from set|x:-=100|opacity:0">
                         <h3>Teaching at our school will not only provide you with the opportunity to gain valuable ESL Teaching Experience. But it will also allow you to experience the Vietnamese culture first hand. You will get to meet locals and if your open enough, make some new friends along the way</h3>
-                        <div>
+                        <div class="anim type:from set|y:-=100|opacity:0">
                             <div class="spacer widest"></div>
                             <a href="/gallery.html" class="btn large primary">Gallery</a>
                         </div>
@@ -364,137 +375,152 @@
 
         <section id="index-s-five" class="l-grid"><!-- section five reviews and contact -->
             <div class="shapes">
-                <object class="large index-s-five-sh-1 svg-image" type="image/svg+xml" width="100%" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_web/compressed/home_sh_s5.svg"></object>
-                <object class="index-s-five-sh-1 svg-image" type="image/svg+xml" width="100%" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_web/compressed/index_normal_s5_sh_1440px.svg"></object>
-                <object class="index-s-five-sh-1 medium svg-image" type="image/svg+xml" width="100%" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_medium/compressed/index_medium_s5_sh.svg"></object>
-                <object class="index-s-five-sh-1 mobile svg-image" type="image/svg+xml" width="100%" data="https://rasenguy.github.io/neww_new_site_production/static/images/home/svg_mobile/compressed/mobile_home_sh_s5.svg"></object>
+                <object class="large index-s-five-sh-1 svg-image" type="image/svg+xml" width="100%" data="/static/images/svg/compressed/index_s5_sh_lg.svg"></object>
+                <object class="index-s-five-sh-1 svg-image" type="image/svg+xml" width="100%" data="/static/images/svg/compressed/index_s5_sh_1440px.svg"></object>
+                <object class="index-s-five-sh-1 medium svg-image" type="image/svg+xml" width="100%" data="/static/images/svg/compressed/index_s5_sh_med.svg"></object>
+                <object class="index-s-five-sh-1 mobile svg-image" type="image/svg+xml" width="100%" data="/static/images/svg/compressed/index_s5_sh_mob.svg"></object>
             </div>
+
             <div class="g-item align-center justify-center wrapper l-flex col">
                 <div class="text-box reviews-section f-item l-flex col wrap items-align-center">
-                    <header>
+                    <header class="anim type:from set|y:+=50|opacity:0">
                         <h1 class="to-upper text shadow">volunteer <span class="primary">reviews</span></h1>
                         <div class="spacer widest"></div>
                     </header>
 
-                    <div class="body">
+                    <div class="body anim type:from set|y:-=50|opacity:0">
                         
                         <ul class="reviews">
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!--Anne-->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>" I volunteered at New World from January to mid March 2019 in Thai Binh. Although my time there was short, it was an unforgettable experience. The teaching itself allowed me to build my own skills as well as bolster my confidence, as it required me to think independently and creatively, as well as practice patience and perseverance. I taught age groups 2 - 14, and found that each one came with its own challenges and rewards. The organisation allows for a high degree of independence when it comes to teaching, giving the teachers the control of how to bring across their ideas and facilitate a cross-cultural connection. The accomodation for teachers is situated in a large, clean house with all amenities one could ask for, and the food provided daily is delicious (if at times a little repetitive). Thai Binh city is a wonderful place to begin exploring Vietnam as a whole, as it is authentically Vietnamese while still having plenty to offer for foreigners. The size of the city gives enough places to explore, with popular tourist destinations such as Ninh Binh in reach for weekend trips, without being overwhelming - I found it exciting while nonetheless experiencing minimal culture shock. The other volunteers, of which by the time I left there were many, are likeminded, welcoming and supportive of newcomers, and work together as a family. The Vietnamese staff of the center are friendly and amenable to requests, and work hard to ensure everybody has the experience they have bargained for. My criticisms of New World are minimal. Occasionally I would have wished for a more structured overview of lesson planning, especially because I had no prior experience, but it wasn’t difficult to adjust and eventually even enjoy the moderate craziness of everyday life. I would highly recommend this center as a place for anyone who is wishing to begin their journey in South East Asia, who wishes to put themselves out of their comfort zone while still feeling safe and supported, and who wishes to make treasured memories and learn about the joys of independence and human connection"</i>
-                                            <br>
-                                            <br>
-                                            <p><b>Anne</b></p>
+                                            <span>
+                                                <i>" I volunteered at New World from January to mid March 2019 in Thai Binh. Although my time there was short, it was an unforgettable experience. The teaching itself allowed me to build my own skills as well as bolster my confidence, as it required me to think independently and creatively, as well as practice patience and perseverance. I taught age groups 2 - 14, and found that each one came with its own challenges and rewards. The organisation allows for a high degree of independence when it comes to teaching, giving the teachers the control of how to bring across their ideas and facilitate a cross-cultural connection. The accomodation for teachers is situated in a large, clean house with all amenities one could ask for, and the food provided daily is delicious (if at times a little repetitive). Thai Binh city is a wonderful place to begin exploring Vietnam as a whole, as it is authentically Vietnamese while still having plenty to offer for foreigners. The size of the city gives enough places to explore, with popular tourist destinations such as Ninh Binh in reach for weekend trips, without being overwhelming - I found it exciting while nonetheless experiencing minimal culture shock. The other volunteers, of which by the time I left there were many, are likeminded, welcoming and supportive of newcomers, and work together as a family. The Vietnamese staff of the center are friendly and amenable to requests, and work hard to ensure everybody has the experience they have bargained for. My criticisms of New World are minimal. Occasionally I would have wished for a more structured overview of lesson planning, especially because I had no prior experience, but it wasn’t difficult to adjust and eventually even enjoy the moderate craziness of everyday life. I would highly recommend this center as a place for anyone who is wishing to begin their journey in South East Asia, who wishes to put themselves out of their comfort zone while still feeling safe and supported, and who wishes to make treasured memories and learn about the joys of independence and human connection"</i>
+                                                <br>
+                                                <br>
+                                                <p><b>Anne</b></p>
+                                            </span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Tobi -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“We spent 3 months in Thai Binh, volunteering at New World during the autumn of 2018. We had a great experience. Sweet staff, amazing kids and good accommodation. We both arrived inexperienced and it took some tough weeks to get accustomed to the teacher role, but eventually we grew more comfortable. We got food, accommodation and allowance as agreed upon. The schedules could at times be unclear and last minute changes often occurred. However, it’s always possible to talk to Ms. Hong who runs the center. The city is very local and the people are so sweet and welcoming to newcomers, it’s truly a heartwarming experience to stay there. The centre also houses a little cat called Tofu who we miss dearly. In total, we would highly recommend teaching at New World Center.”</i>
-                                            <br>
-                                            <br>
-                                            <p><b>Tobias and Isabelle</b></p>
+                                            <span>
+                                                <i>“We spent 3 months in Thai Binh, volunteering at New World during the autumn of 2018. We had a great experience. Sweet staff, amazing kids and good accommodation. We both arrived inexperienced and it took some tough weeks to get accustomed to the teacher role, but eventually we grew more comfortable. We got food, accommodation and allowance as agreed upon. The schedules could at times be unclear and last minute changes often occurred. However, it’s always possible to talk to Ms. Hong who runs the center. The city is very local and the people are so sweet and welcoming to newcomers, it’s truly a heartwarming experience to stay there. The centre also houses a little cat called Tofu who we miss dearly. In total, we would highly recommend teaching at New World Center.”</i>
+                                                <br>
+                                                <br>
+                                                <p><b>Tobias and Isabelle</b></p>
+                                            </span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Eva  -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“I have been here as a volunteer for around 5 months and I really enjoyed it here. Ms Hong is really helpful and takes care of all the volunteers. If somebody asks for some days off or just needs anything, she always tries to accommodate all the requests.We have lunch and dinner every day and there is always plenty of delicious food for us. All the teaching assistants here are nice and very helpful too. There is always someone with you in the class to help translate to Vietnamese, so you dont have to worry about that. Its been a really great experience working here and I am even thinking of coming back.”</i>
-                                            <br>
-                                            <br>
-                                            <p><b>Eva</b></p>
+                                            <span>
+                                                <i>“I have been here as a volunteer for around 5 months and I really enjoyed it here. Ms Hong is really helpful and takes care of all the volunteers. If somebody asks for some days off or just needs anything, she always tries to accommodate all the requests.We have lunch and dinner every day and there is always plenty of delicious food for us. All the teaching assistants here are nice and very helpful too. There is always someone with you in the class to help translate to Vietnamese, so you dont have to worry about that. Its been a really great experience working here and I am even thinking of coming back.”</i>
+                                                <br>
+                                                <br>
+                                                <p><b>Eva</b></p>
+                                            </span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Dani  -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“For me the best thing about working for New World in Thai Binh, is meeting and getting to know the other volunteers. Its a very social place and you make friends very quickly. The kids that you teach are also fantastic, so full of energy and always so happy to see you! The children are very sweet, sometimes they can get a little wild and difficuilt to control but on the whole and if you have a good teaching assistant then the classes can be fun! One thing I think the centre needs toimprove on is, telling us in advance what the lesson plan is so we can prepare and make the lesson run better and get the appropriate materials.As a whole my experince at New World was great, had a lot of fun times hanging out on the roof, going on trips together during the weekend. Gaining a new experience teaching, with kids who really want to learn and have fun. Ms Hong is really kind, she takes care of everyone, and often takes us all out for meals.”</i>
-                                            <br>
-                                            <br>
-                                            <p><b>Dani</b></p>
+                                            <span>
+                                                <i>“For me the best thing about working for New World in Thai Binh, is meeting and getting to know the other volunteers. Its a very social place and you make friends very quickly. The kids that you teach are also fantastic, so full of energy and always so happy to see you! The children are very sweet, sometimes they can get a little wild and difficuilt to control but on the whole and if you have a good teaching assistant then the classes can be fun! One thing I think the centre needs toimprove on is, telling us in advance what the lesson plan is so we can prepare and make the lesson run better and get the appropriate materials.As a whole my experince at New World was great, had a lot of fun times hanging out on the roof, going on trips together during the weekend. Gaining a new experience teaching, with kids who really want to learn and have fun. Ms Hong is really kind, she takes care of everyone, and often takes us all out for meals.”</i>
+                                                <br>
+                                                <br>    
+                                                <p><b>Dani</b></p>
+                                            </span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Chuck -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“decent spot all the basics with mild adjustments here and their but nothing to big. it's s good organization not to many hours teachings a unique experience, they helped when i got in an accident. it's a cool spot to kick it for a minute.”</i>
-                                            <br>
-                                            <br>
-                                            <p><b>Chuck</b></p>
+                                            <span>
+                                                <i>“decent spot all the basics with mild adjustments here and their but nothing to big. it's s good organization not to many hours teachings a unique experience, they helped when i got in an accident. it's a cool spot to kick it for a minute.”</i>
+                                                <br>
+                                                <br>
+                                                <p><b>Chuck</b></p>
+                                            </span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Johanna -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“I've been working in New World for 5 months now. I had a truly incredible time here. The center itself is away from the main road so traffic noise isn't usually a bother. But, at the same time, the location is quite convenient. Coffee shops, clothes and grocery stores, and small markets are within walking distance. If volunteers would like to check out further areas, the center has motorbikes which they can borrow. Lunch and dinner are also provided. Special dietary needs and preferences are catered upon request. Miss Hong is patient with all the volunteers' requests and makes effort to accommodate them. I could say the same for the Vietnamese assistants, they are beyond hospitable. They will go out their way to provide the volunteers with experiences such as visiting their hometowns, letting the foreigners try local fruits and cuisines, sharing Vietnamese history handed down from their own parents. I also had the chance to connect with the locals, which gave me a taste of the genuine Vietnamese way of life-- the unfiltered version of the country which is usually (either deliberately or not) shied away from tourist eyes. I cannot deny that I struggled a bit at first especially with the lack of structure in lesson plans and last-minute changes. But after an adjustment phase of a week or two, things became fairly easy. There will be miscommunication from time to time but they're not usually that grave nor significant. Also my awesome students (who won't go unmentioned in this review), in their own little ways, give me joy and delight. Those bright, passionate kids have the ability to encourage just any teacher to give their whole effort. The best part, for me, however, is establishing a feeling of communion with my fellow volunteers. From my personal experience, New World had been an avenue for expansion and reflection. I cannot guarantee everyone to have a grand adventure but I definitely recommend this place to travelers and volunteers who want the best deal.”</i>
-                                            <br>
-                                            <br>
-                                            <p><b>Johana</b></p>
+                                            <span>
+                                                <i>“I've been working in New World for 5 months now. I had a truly incredible time here. The center itself is away from the main road so traffic noise isn't usually a bother. But, at the same time, the location is quite convenient. Coffee shops, clothes and grocery stores, and small markets are within walking distance. If volunteers would like to check out further areas, the center has motorbikes which they can borrow. Lunch and dinner are also provided. Special dietary needs and preferences are catered upon request. Miss Hong is patient with all the volunteers' requests and makes effort to accommodate them. I could say the same for the Vietnamese assistants, they are beyond hospitable. They will go out their way to provide the volunteers with experiences such as visiting their hometowns, letting the foreigners try local fruits and cuisines, sharing Vietnamese history handed down from their own parents. I also had the chance to connect with the locals, which gave me a taste of the genuine Vietnamese way of life-- the unfiltered version of the country which is usually (either deliberately or not) shied away from tourist eyes. I cannot deny that I struggled a bit at first especially with the lack of structure in lesson plans and last-minute changes. But after an adjustment phase of a week or two, things became fairly easy. There will be miscommunication from time to time but they're not usually that grave nor significant. Also my awesome students (who won't go unmentioned in this review), in their own little ways, give me joy and delight. Those bright, passionate kids have the ability to encourage just any teacher to give their whole effort. The best part, for me, however, is establishing a feeling of communion with my fellow volunteers. From my personal experience, New World had been an avenue for expansion and reflection. I cannot guarantee everyone to have a grand adventure but I definitely recommend this place to travelers and volunteers who want the best deal.”</i>
+                                                <br>
+                                                <br>
+                                                <p><b>Johana</b></p>
+                                            </span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Karen -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“I have been working as volunteer for about 4 months now and I have enjoyed of the experience so far. I recommend this place 'cause it's really convenient to low budget travelers who really want to get into daily Vietnamese lifestyle in a small city, all the facilities Mrs Hong provides along with her team of teacher assitents had made of my time here really pleasant.”</i>
-                                            <br>
-                                            <br>
-                                            <p><b>Karen</b></p>
+                                            <span>
+                                                <i>“I have been working as volunteer for about 4 months now and I have enjoyed of the experience so far. I recommend this place 'cause it's really convenient to low budget travelers who really want to get into daily Vietnamese lifestyle in a small city, all the facilities Mrs Hong provides along with her team of teacher assitents had made of my time here really pleasant.”</i>
+                                                <br>
+                                                <br>
+                                                <p><b>Karen</b></p>
+                                            </span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Marion -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“Hello! I have been volunteering for New world education in Thai binh for 3 months this year and I must say I had a great great time. Ms Hong and all assistant teachers are nice and motivated. The kids are cute and full of energy!. Everyone is taking a very good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it.”</i>
+                                            <span><i>“Hello! I have been volunteering for New world education in Thai binh for 3 months this year and I must say I had a great great time. Ms Hong and all assistant teachers are nice and motivated. The kids are cute and full of energy!. Everyone is taking a very good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it.”</i>
                                             <br>
                                             <br>
-                                            <p><b>Marion</b></p>
+                                            <p><b>Marion</b></p></span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                             <li class="review">
-                                <a href="">
+                                <div>
                                     <div class="mugshot shadow-fg"></div><!-- Oksana -->
                                     <div class="hover-box t-align center">
                                         <blockquote>
-                                            <i>“Hello everyone! My boyfriend and I have been volunteering with C4C in Thai Binh city with New World organisation. After 3 months of staying and helping ms. Tran Hong we decided to stay 3 months more because we really liked what we were doing here .and the organisation too. We will stay for 2 months more and our experience here has been really enjoyable. We had a support from ms Hong , teachers and staff. All of them are really nice and helpful. Quite reasonable schedule !!!Ms Hong always worries about the food ( there are some vegetarian and vegan people in the house, so she always wants everyone to be happy with the food and she makes all her best for that); we have some motorbikes that belong to the center and we are free to use them any time we want( for example to go on a trip at the weekend); we are also feel free to talk about bettering classes, provide our ideas etc..; in our free time we can do whatever we want: THERE ARE NOT ANY RESTRICTIONS ABOUT THE TIME WE COME HOME or whatever; if we need any help with the external things , she always tries to help us. Ms Hong is a nice , kind and generous person. She tries to make the best for the volunteers who are coming from different countries where the culture is sometimes completely different . She tries to create a home environment inviting us for family meals with her friends , prepares birthdays’ parties , organises trips to help us meet beautiful places and taste delicious local food or when the volunteers are leaving she tries to make this moment special to thank volunteers for their work and say “good bye “ pleasantly. We have been quite happy here and we have had a lovely experience. Thank you ms Tran Hong and the staff for everything! I hope this information can help future volunteers.”</i>
+                                            <span><i>“Hello everyone! My boyfriend and I have been volunteering with C4C in Thai Binh city with New World organisation. After 3 months of staying and helping ms. Tran Hong we decided to stay 3 months more because we really liked what we were doing here .and the organisation too. We will stay for 2 months more and our experience here has been really enjoyable. We had a support from ms Hong , teachers and staff. All of them are really nice and helpful. Quite reasonable schedule !!!Ms Hong always worries about the food ( there are some vegetarian and vegan people in the house, so she always wants everyone to be happy with the food and she makes all her best for that); we have some motorbikes that belong to the center and we are free to use them any time we want( for example to go on a trip at the weekend); we are also feel free to talk about bettering classes, provide our ideas etc..; in our free time we can do whatever we want: THERE ARE NOT ANY RESTRICTIONS ABOUT THE TIME WE COME HOME or whatever; if we need any help with the external things , she always tries to help us. Ms Hong is a nice , kind and generous person. She tries to make the best for the volunteers who are coming from different countries where the culture is sometimes completely different . She tries to create a home environment inviting us for family meals with her friends , prepares birthdays’ parties , organises trips to help us meet beautiful places and taste delicious local food or when the volunteers are leaving she tries to make this moment special to thank volunteers for their work and say “good bye “ pleasantly. We have been quite happy here and we have had a lovely experience. Thank you ms Tran Hong and the staff for everything! I hope this information can help future volunteers.”</i>
                                             <br>
                                             <br>
-                                            <p><b>Oksana</b></p>
+                                            <p><b>Oksana</b></p></span>
                                         </blockquote>
                                     </div>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                         
@@ -504,121 +530,135 @@
                             <!-- carousel -->
                             <ul class="reviews carousel l-grid items-justify-center items-align-center">
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!--Anne-->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>" I volunteered at New World from January to mid March 2019 in Thai Binh. Although my time there was short, it was an unforgettable experience. The teaching itself allowed me to build my own skills as well as bolster my confidence, as it required me to think independently and creatively, as well as practice patience and perseverance. I taught age groups 2 - 14, and found that each one came with its own challenges and rewards. The organisation allows for a high degree of independence when it comes to teaching, giving the teachers the control of how to bring across their ideas and facilitate a cross-cultural connection. The accomodation for teachers is situated in a large, clean house with all amenities one could ask for, and the food provided daily is delicious (if at times a little repetitive). Thai Binh city is a wonderful place to begin exploring Vietnam as a whole, as it is authentically Vietnamese while still having plenty to offer for foreigners. The size of the city gives enough places to explore, with popular tourist destinations such as Ninh Binh in reach for weekend trips, without being overwhelming - I found it exciting while nonetheless experiencing minimal culture shock. The other volunteers, of which by the time I left there were many, are likeminded, welcoming and supportive of newcomers, and work together as a family. The Vietnamese staff of the center are friendly and amenable to requests, and work hard to ensure everybody has the experience they have bargained for. My criticisms of New World are minimal. Occasionally I would have wished for a more structured overview of lesson planning, especially because I had no prior experience, but it wasn’t difficult to adjust and eventually even enjoy the moderate craziness of everyday life. I would highly recommend this center as a place for anyone who is wishing to begin their journey in South East Asia, who wishes to put themselves out of their comfort zone while still feeling safe and supported, and who wishes to make treasured memories and learn about the joys of independence and human connection"</i>
-                                                <br>
-                                                <br>
-                                                <p><b>Anne</b></p>
+                                                <span>
+                                                    <i>" I volunteered at New World from January to mid March 2019 in Thai Binh. Although my time there was short, it was an unforgettable experience. The teaching itself allowed me to build my own skills as well as bolster my confidence, as it required me to think independently and creatively, as well as practice patience and perseverance. I taught age groups 2 - 14, and found that each one came with its own challenges and rewards. The organisation allows for a high degree of independence when it comes to teaching, giving the teachers the control of how to bring across their ideas and facilitate a cross-cultural connection. The accomodation for teachers is situated in a large, clean house with all amenities one could ask for, and the food provided daily is delicious (if at times a little repetitive). Thai Binh city is a wonderful place to begin exploring Vietnam as a whole, as it is authentically Vietnamese while still having plenty to offer for foreigners. The size of the city gives enough places to explore, with popular tourist destinations such as Ninh Binh in reach for weekend trips, without being overwhelming - I found it exciting while nonetheless experiencing minimal culture shock. The other volunteers, of which by the time I left there were many, are likeminded, welcoming and supportive of newcomers, and work together as a family. The Vietnamese staff of the center are friendly and amenable to requests, and work hard to ensure everybody has the experience they have bargained for. My criticisms of New World are minimal. Occasionally I would have wished for a more structured overview of lesson planning, especially because I had no prior experience, but it wasn’t difficult to adjust and eventually even enjoy the moderate craziness of everyday life. I would highly recommend this center as a place for anyone who is wishing to begin their journey in South East Asia, who wishes to put themselves out of their comfort zone while still feeling safe and supported, and who wishes to make treasured memories and learn about the joys of independence and human connection"</i>
+                                                    <br>
+                                                    <br>
+                                                    <p><b>Anne</b></p>
+                                                </span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Tobi -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“We spent 3 months in Thai Binh, volunteering at New World during the autumn of 2018. We had a great experience. Sweet staff, amazing kids and good accommodation. We both arrived inexperienced and it took some tough weeks to get accustomed to the teacher role, but eventually we grew more comfortable. We got food, accommodation and allowance as agreed upon. The schedules could at times be unclear and last minute changes often occurred. However, it’s always possible to talk to Ms. Hong who runs the center. The city is very local and the people are so sweet and welcoming to newcomers, it’s truly a heartwarming experience to stay there. The centre also houses a little cat called Tofu who we miss dearly. In total, we would highly recommend teaching at New World Center.”</i>
-                                                <br>
-                                                <br>
-                                                <p><b>Tobias and Isabelle</b></p>
+                                                <span>
+                                                    <i>“We spent 3 months in Thai Binh, volunteering at New World during the autumn of 2018. We had a great experience. Sweet staff, amazing kids and good accommodation. We both arrived inexperienced and it took some tough weeks to get accustomed to the teacher role, but eventually we grew more comfortable. We got food, accommodation and allowance as agreed upon. The schedules could at times be unclear and last minute changes often occurred. However, it’s always possible to talk to Ms. Hong who runs the center. The city is very local and the people are so sweet and welcoming to newcomers, it’s truly a heartwarming experience to stay there. The centre also houses a little cat called Tofu who we miss dearly. In total, we would highly recommend teaching at New World Center.”</i>
+                                                    <br>
+                                                    <br>
+                                                    <p><b>Tobias and Isabelle</b></p>
+                                                </span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Eva  -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“I have been here as a volunteer for around 5 months and I really enjoyed it here. Ms Hong is really helpful and takes care of all the volunteers. If somebody asks for some days off or just needs anything, she always tries to accommodate all the requests.We have lunch and dinner every day and there is always plenty of delicious food for us. All the teaching assistants here are nice and very helpful too. There is always someone with you in the class to help translate to Vietnamese, so you dont have to worry about that. Its been a really great experience working here and I am even thinking of coming back.”</i>
-                                                <br>
-                                                <br>
-                                                <p><b>Eva</b></p>
+                                                <span>
+                                                    <i>“I have been here as a volunteer for around 5 months and I really enjoyed it here. Ms Hong is really helpful and takes care of all the volunteers. If somebody asks for some days off or just needs anything, she always tries to accommodate all the requests.We have lunch and dinner every day and there is always plenty of delicious food for us. All the teaching assistants here are nice and very helpful too. There is always someone with you in the class to help translate to Vietnamese, so you dont have to worry about that. Its been a really great experience working here and I am even thinking of coming back.”</i>
+                                                    <br>
+                                                    <br>
+                                                    <p><b>Eva</b></p>
+                                                </span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Dani  -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“For me the best thing about working for New World in Thai Binh, is meeting and getting to know the other volunteers. Its a very social place and you make friends very quickly. The kids that you teach are also fantastic, so full of energy and always so happy to see you! The children are very sweet, sometimes they can get a little wild and difficuilt to control but on the whole and if you have a good teaching assistant then the classes can be fun! One thing I think the centre needs toimprove on is, telling us in advance what the lesson plan is so we can prepare and make the lesson run better and get the appropriate materials.As a whole my experince at New World was great, had a lot of fun times hanging out on the roof, going on trips together during the weekend. Gaining a new experience teaching, with kids who really want to learn and have fun. Ms Hong is really kind, she takes care of everyone, and often takes us all out for meals.”</i>
-                                                <br>
-                                                <br>
-                                                <p><b>Dani</b></p>
+                                                <span>
+                                                    <i>“For me the best thing about working for New World in Thai Binh, is meeting and getting to know the other volunteers. Its a very social place and you make friends very quickly. The kids that you teach are also fantastic, so full of energy and always so happy to see you! The children are very sweet, sometimes they can get a little wild and difficuilt to control but on the whole and if you have a good teaching assistant then the classes can be fun! One thing I think the centre needs toimprove on is, telling us in advance what the lesson plan is so we can prepare and make the lesson run better and get the appropriate materials.As a whole my experince at New World was great, had a lot of fun times hanging out on the roof, going on trips together during the weekend. Gaining a new experience teaching, with kids who really want to learn and have fun. Ms Hong is really kind, she takes care of everyone, and often takes us all out for meals.”</i>
+                                                    <br>
+                                                    <br>    
+                                                    <p><b>Dani</b></p>
+                                                </span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Chuck -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“decent spot all the basics with mild adjustments here and their but nothing to big. it's s good organization not to many hours teachings a unique experience, they helped when i got in an accident. it's a cool spot to kick it for a minute.”</i>
-                                                <br>
-                                                <br>
-                                                <p><b>Chuck</b></p>
+                                                <span>
+                                                    <i>“decent spot all the basics with mild adjustments here and their but nothing to big. it's s good organization not to many hours teachings a unique experience, they helped when i got in an accident. it's a cool spot to kick it for a minute.”</i>
+                                                    <br>
+                                                    <br>
+                                                    <p><b>Chuck</b></p>
+                                                </span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Johanna -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“I've been working in New World for 5 months now. I had a truly incredible time here. The center itself is away from the main road so traffic noise isn't usually a bother. But, at the same time, the location is quite convenient. Coffee shops, clothes and grocery stores, and small markets are within walking distance. If volunteers would like to check out further areas, the center has motorbikes which they can borrow. Lunch and dinner are also provided. Special dietary needs and preferences are catered upon request. Miss Hong is patient with all the volunteers' requests and makes effort to accommodate them. I could say the same for the Vietnamese assistants, they are beyond hospitable. They will go out their way to provide the volunteers with experiences such as visiting their hometowns, letting the foreigners try local fruits and cuisines, sharing Vietnamese history handed down from their own parents. I also had the chance to connect with the locals, which gave me a taste of the genuine Vietnamese way of life-- the unfiltered version of the country which is usually (either deliberately or not) shied away from tourist eyes. I cannot deny that I struggled a bit at first especially with the lack of structure in lesson plans and last-minute changes. But after an adjustment phase of a week or two, things became fairly easy. There will be miscommunication from time to time but they're not usually that grave nor significant. Also my awesome students (who won't go unmentioned in this review), in their own little ways, give me joy and delight. Those bright, passionate kids have the ability to encourage just any teacher to give their whole effort. The best part, for me, however, is establishing a feeling of communion with my fellow volunteers. From my personal experience, New World had been an avenue for expansion and reflection. I cannot guarantee everyone to have a grand adventure but I definitely recommend this place to travelers and volunteers who want the best deal.”</i>
-                                                <br>
-                                                <br>
-                                                <p><b>Johana</b></p>
+                                                <span>
+                                                    <i>“I've been working in New World for 5 months now. I had a truly incredible time here. The center itself is away from the main road so traffic noise isn't usually a bother. But, at the same time, the location is quite convenient. Coffee shops, clothes and grocery stores, and small markets are within walking distance. If volunteers would like to check out further areas, the center has motorbikes which they can borrow. Lunch and dinner are also provided. Special dietary needs and preferences are catered upon request. Miss Hong is patient with all the volunteers' requests and makes effort to accommodate them. I could say the same for the Vietnamese assistants, they are beyond hospitable. They will go out their way to provide the volunteers with experiences such as visiting their hometowns, letting the foreigners try local fruits and cuisines, sharing Vietnamese history handed down from their own parents. I also had the chance to connect with the locals, which gave me a taste of the genuine Vietnamese way of life-- the unfiltered version of the country which is usually (either deliberately or not) shied away from tourist eyes. I cannot deny that I struggled a bit at first especially with the lack of structure in lesson plans and last-minute changes. But after an adjustment phase of a week or two, things became fairly easy. There will be miscommunication from time to time but they're not usually that grave nor significant. Also my awesome students (who won't go unmentioned in this review), in their own little ways, give me joy and delight. Those bright, passionate kids have the ability to encourage just any teacher to give their whole effort. The best part, for me, however, is establishing a feeling of communion with my fellow volunteers. From my personal experience, New World had been an avenue for expansion and reflection. I cannot guarantee everyone to have a grand adventure but I definitely recommend this place to travelers and volunteers who want the best deal.”</i>
+                                                    <br>
+                                                    <br>
+                                                    <p><b>Johana</b></p>
+                                                </span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Karen -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“I have been working as volunteer for about 4 months now and I have enjoyed of the experience so far. I recommend this place 'cause it's really convenient to low budget travelers who really want to get into daily Vietnamese lifestyle in a small city, all the facilities Mrs Hong provides along with her team of teacher assitents had made of my time here really pleasant.”</i>
-                                                <br>
-                                                <br>
-                                                <p><b>Karen</b></p>
+                                                <span>
+                                                    <i>“I have been working as volunteer for about 4 months now and I have enjoyed of the experience so far. I recommend this place 'cause it's really convenient to low budget travelers who really want to get into daily Vietnamese lifestyle in a small city, all the facilities Mrs Hong provides along with her team of teacher assitents had made of my time here really pleasant.”</i>
+                                                    <br>
+                                                    <br>
+                                                    <p><b>Karen</b></p>
+                                                </span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Marion -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“Hello! I have been volunteering for New world education in Thai binh for 3 months this year and I must say I had a great great time. Ms Hong and all assistant teachers are nice and motivated. The kids are cute and full of energy!. Everyone is taking a very good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it.”</i>
+                                                <span><i>“Hello! I have been volunteering for New world education in Thai binh for 3 months this year and I must say I had a great great time. Ms Hong and all assistant teachers are nice and motivated. The kids are cute and full of energy!. Everyone is taking a very good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it good care of us the volunteers we are very lucky to benefit from such a warm welcome. It is a very good organization and I would definitely recommend you to join it.”</i>
                                                 <br>
                                                 <br>
-                                                <p><b>Marion</b></p>
+                                                <p><b>Marion</b></p></span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="review carousel-photo">
-                                    <a href="">
+                                    <div>
                                         <div class="mugshot shadow-fg"></div><!-- Oksana -->
                                         <div class="hover-box t-align center">
                                             <blockquote>
-                                                <i>“Hello everyone! My boyfriend and I have been volunteering with C4C in Thai Binh city with New World organisation. After 3 months of staying and helping ms. Tran Hong we decided to stay 3 months more because we really liked what we were doing here .and the organisation too. We will stay for 2 months more and our experience here has been really enjoyable. We had a support from ms Hong , teachers and staff. All of them are really nice and helpful. Quite reasonable schedule !!!Ms Hong always worries about the food ( there are some vegetarian and vegan people in the house, so she always wants everyone to be happy with the food and she makes all her best for that); we have some motorbikes that belong to the center and we are free to use them any time we want( for example to go on a trip at the weekend); we are also feel free to talk about bettering classes, provide our ideas etc..; in our free time we can do whatever we want: THERE ARE NOT ANY RESTRICTIONS ABOUT THE TIME WE COME HOME or whatever; if we need any help with the external things , she always tries to help us. Ms Hong is a nice , kind and generous person. She tries to make the best for the volunteers who are coming from different countries where the culture is sometimes completely different . She tries to create a home environment inviting us for family meals with her friends , prepares birthdays’ parties , organises trips to help us meet beautiful places and taste delicious local food or when the volunteers are leaving she tries to make this moment special to thank volunteers for their work and say “good bye “ pleasantly. We have been quite happy here and we have had a lovely experience. Thank you ms Tran Hong and the staff for everything! I hope this information can help future volunteers.”</i>
+                                                <span><i>“Hello everyone! My boyfriend and I have been volunteering with C4C in Thai Binh city with New World organisation. After 3 months of staying and helping ms. Tran Hong we decided to stay 3 months more because we really liked what we were doing here .and the organisation too. We will stay for 2 months more and our experience here has been really enjoyable. We had a support from ms Hong , teachers and staff. All of them are really nice and helpful. Quite reasonable schedule !!!Ms Hong always worries about the food ( there are some vegetarian and vegan people in the house, so she always wants everyone to be happy with the food and she makes all her best for that); we have some motorbikes that belong to the center and we are free to use them any time we want( for example to go on a trip at the weekend); we are also feel free to talk about bettering classes, provide our ideas etc..; in our free time we can do whatever we want: THERE ARE NOT ANY RESTRICTIONS ABOUT THE TIME WE COME HOME or whatever; if we need any help with the external things , she always tries to help us. Ms Hong is a nice , kind and generous person. She tries to make the best for the volunteers who are coming from different countries where the culture is sometimes completely different . She tries to create a home environment inviting us for family meals with her friends , prepares birthdays’ parties , organises trips to help us meet beautiful places and taste delicious local food or when the volunteers are leaving she tries to make this moment special to thank volunteers for their work and say “good bye “ pleasantly. We have been quite happy here and we have had a lovely experience. Thank you ms Tran Hong and the staff for everything! I hope this information can help future volunteers.”</i>
                                                 <br>
                                                 <br>
-                                                <p><b>Oksana</b></p>
+                                                <p><b>Oksana</b></p></span>
                                             </blockquote>
                                         </div>
-                                    </a>
+                                    </div>
                                 </li>
                                 <li class="carousel-btn--prev"></li>
                                 <li class="carousel-btn--next"></li>
@@ -629,10 +669,10 @@
                     </div>
                 </div>
                 <div class="text-box contact-section f-item l-flex col items-align-center">
-                    <header>
+                    <header class="anim type:from set|y:+=50|opacity:0">
                         <h1 class="to-upper text shadow"><span class="primary">find</span> us or <span class="primary">shoot</span> us a message<span class="primary">!</span></h1>
                     </header>
-                    <div class="body l-flex">
+                    <div class="body l-flex anim type:from set|y:-=50|opacity:0">
                         <div class="map-wrapper f-item l-flex justify-items-right items-align-left">
                             <div class="map-box">
                                 <svg class="svg-image shadow-fg" id="svg-images"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -683,7 +723,7 @@
             
             <!-- shapes  -->
             <div class="shapes">
-                <object class="svg-image" type="image/svg+xml" width="100%" height="100%" data="https://rasenguy.github.io/neww_new_site_production/static/images/general/svg/compressed/footer_sh.svg"></object>
+                <object class="svg-image" type="image/svg+xml" width="100%" height="100%" data="/static/images/general/svg/compressed/footer_sh.svg"></object>
             </div>
             
             <!-- wrapper -->
@@ -722,14 +762,19 @@
             </div>
             
         </footer>
+        
     </main> <!-- end main -->
     
-    
+    <!-- GreenSock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+
     <!-- js -->
-    <script defer type="module" src="https://rasenguy.github.io/neww_new_site_production/static/js/main.js"></script> <!-- main -->
-    <!-- <script defer src="/static/js/carousel.js"></script> -->
-    <!-- <script defer src="/static/js/gmap.js"></script> -->
+    <script type="module" src="/static/js/main.js"></script> <!-- main -->
     
-    
+
 </body>
 </html>

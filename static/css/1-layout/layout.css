@@ -135,17 +135,19 @@ nav#nav-mobile-links {
   bottom: 0;
   left: 0;
   right: 0;
+  visibility: collapse;
 }
 nav#nav-mobile-links .nav-links-bottom, nav#nav-mobile-links::before {
+  visibility: initial;
   transform: translateY(28rem);
 }
 
 main#main {
-  overflow: hidden;
+  width: 100vw;
 }
 main#main section, main#main footer {
   position: relative;
-  width: 100vw;
+  width: 100%;
 }
 main#main section .shapes, main#main footer .shapes {
   width: 100%;
@@ -539,6 +541,7 @@ main#main #index-s-five .wrapper .text-box.contact-section .body > form.f-item i
 }
 main#main #index-s-five .wrapper .text-box.contact-section .body > form.f-item textarea {
   height: 15vh;
+  resize: none;
 }
 main#main #index-s-five .wrapper .text-box.contact-section .body > form.f-item > div.form-content {
   width: 90%;
@@ -552,6 +555,125 @@ main#main #index-s-five .wrapper .text-box.contact-section .body > form.f-item >
 @media only screen and (max-width: 576px) {
   main#main #index-s-five .wrapper .text-box.contact-section .body > form.f-item {
     flex: 100%;
+  }
+}
+main#main #gallery-s-gallery .wrapper {
+  position: relative;
+  padding: 5rem 0;
+}
+main#main #gallery-s-gallery .wrapper .f-item {
+  flex: 1 30%;
+}
+@media only screen and (max-width: 768px) {
+  main#main #gallery-s-gallery .wrapper .f-item {
+    flex: 1 50%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main#main #gallery-s-gallery .wrapper .f-item {
+    flex: 1 100%;
+  }
+}
+main#main #gallery-s-gallery .wrapper .f-item a {
+  display: block;
+  padding: 1rem;
+}
+main#main #gallery-s-gallery .wrapper .f-item a img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main#main #about-s1 .wrapper {
+  height: 100%;
+}
+main#main #about-s1 .wrapper .f-item {
+  flex: 1 50%;
+}
+main#main #about-s1 .wrapper .story .paragraph.f-item, main#main #about-s1 .wrapper .mission .paragraph.f-item {
+  flex: 1 55%;
+}
+@media only screen and (max-width: 768px) {
+  main#main #about-s1 .wrapper .story .paragraph.f-item, main#main #about-s1 .wrapper .mission .paragraph.f-item {
+    flex: 1 75%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main#main #about-s1 .wrapper .story .paragraph.f-item, main#main #about-s1 .wrapper .mission .paragraph.f-item {
+    text-align: center;
+  }
+}
+main#main #about-s1 .wrapper .story .image-box.f-item, main#main #about-s1 .wrapper .mission .image-box.f-item {
+  flex: 1 45%;
+}
+@media only screen and (max-width: 768px) {
+  main#main #about-s1 .wrapper .story .image-box.f-item, main#main #about-s1 .wrapper .mission .image-box.f-item {
+    flex: 1 25%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main#main #about-s1 .wrapper .story > .paragraph.f-item, main#main #about-s1 .wrapper .story .image-box.f-item, main#main #about-s1 .wrapper .mission > .paragraph.f-item, main#main #about-s1 .wrapper .mission .image-box.f-item {
+    flex: 1 100%;
+  }
+}
+main#main #about-s1 .wrapper .story .paragraph.f-item {
+  height: 40%;
+}
+main#main #about-s1 .wrapper .story .paragraph.f-item .body > p {
+  padding-right: 5rem;
+}
+@media only screen and (max-width: 576px) {
+  main#main #about-s1 .wrapper .story .paragraph.f-item .body > p {
+    padding-right: 0rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main#main #about-s1 .wrapper .story .paragraph.f-item {
+    height: 0;
+  }
+}
+main#main #about-s1 .wrapper .story .image-box {
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 850px) {
+  main#main #about-s1 .wrapper .story .image-box {
+    margin-top: 8rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main#main #about-s1 .wrapper .story {
+    margin-top: 5rem;
+  }
+  main#main #about-s1 .wrapper .story .image-box {
+    margin-top: clamp(3rem, 37.3880597015rem + -59.7014925373vw, 15rem);
+  }
+}
+main#main #about-s1 .wrapper .mission .paragraph .body > p {
+  padding-left: 5rem;
+}
+@media only screen and (max-width: 576px) {
+  main#main #about-s1 .wrapper .mission .paragraph .body > p {
+    padding-left: 0rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  main#main #about-s1 .wrapper .mission .paragraph {
+    margin-top: clamp(3rem, -3rem + 10.4166666667vw, 5rem);
+  }
+  main#main #about-s1 .wrapper .mission .image-box {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main#main #about-s1 .wrapper .mission .image-box {
+    margin-top: -10rem;
+  }
+  main#main #about-s1 .wrapper .mission div:first-child {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) {
+  main#main #about-s1 .wrapper .mission div.image-box:last-child {
+    display: none;
   }
 }
 main#main footer {
