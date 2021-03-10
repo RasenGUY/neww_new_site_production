@@ -1,8 +1,0 @@
-<?xml-stylesheet type="text/css" href="../../../../css/1-layout/layout.css"?>
-<?xml-stylesheet type="text/css" href="../../../../css/2-modules/modules.css"?>
-<svg id="svg-images" class="carousel-arrows" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.39 44.62">
-  <defs/>
-  <g data-name="Layer 2">
-    <path fill="#2bdd51" class="fill" d="M39.24 43.68L73.55 5.46a3.46 3.46 0 000-4.52 2.68 2.68 0 00-3.79-.29 2.65 2.65 0 00-.29.29L37.19 36.88 4.93.94a2.69 2.69 0 00-3.79-.3 4 4 0 00-.29.29A3.41 3.41 0 000 3.2a3.35 3.35 0 00.84 2.26l34.31 38.22a2.69 2.69 0 003.79.3 2.13 2.13 0 00.3-.3z" data-name="Layer 1"/>
-  </g>
-</svg>

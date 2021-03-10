@@ -1006,7 +1006,7 @@ nav#nav-mobile-links::before {
 #gallery-hero .bg-image {
   background-attachment: initial;
   /* background-image: url("/static/images/gallery/jpeg_web/compressed/experience_1.jpg"); */
-  background-image: url("/jpeg/compressed/gallery_hero-1_web.jpg");
+  background-image: url("/static/images/jpeg/compressed/gallery_hero-1_web.jpg");
   background-origin: border-box;
   background-position: center;
   background-repeat: no-repeat;
