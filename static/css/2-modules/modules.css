@@ -640,7 +640,7 @@ nav#nav-mobile-links::before {
 @media only screen and (max-width: 412px) {
   #index-s-two .bg-image {
     background-attachment: initial;
-    background-image: url("/static/images/home/jpeg_mobile/index_s_two-1_mob.jpg");
+    background-image: url("/static/images/jpeg/compressed/index_s_two-1_mob.jpg");
     background-origin: border-box;
     background-position: center;
     background-repeat: no-repeat;
@@ -1005,7 +1005,6 @@ nav#nav-mobile-links::before {
 }
 #gallery-hero .bg-image {
   background-attachment: initial;
-  /* background-image: url("/static/images/gallery/jpeg_web/compressed/experience_1.jpg"); */
   background-image: url("/static/images/jpeg/compressed/gallery_hero-1_web.jpg");
   background-origin: border-box;
   background-position: center;

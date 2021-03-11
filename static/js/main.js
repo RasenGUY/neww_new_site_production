@@ -93,7 +93,7 @@ window.onload = (()=>{
 
         for (let shape of svgS){
             const svgCircles = shape.contentDocument.querySelectorAll(".svg-circle");
-            let count = 1; 
+            let count = 1;
             for (let circ of svgCircles){
                 if (count % 2 == 0){
                     gsap.to(circ, {y:30, duration: 1.5, repeat:-1, yoyo:true, ease:"sine.inOut"});
