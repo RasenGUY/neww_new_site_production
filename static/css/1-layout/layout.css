@@ -42,7 +42,8 @@
 
 /* navigation */
 nav, main {
-  width: 100vw;
+  width: 100%;
+  /* overflow-x:  hidden; */
 }
 
 #nav-web {
@@ -142,9 +143,6 @@ nav#nav-mobile-links .nav-links-bottom, nav#nav-mobile-links::before {
   transform: translateY(28rem);
 }
 
-main#main {
-  width: 100vw;
-}
 main#main section, main#main footer {
   position: relative;
   width: 100%;

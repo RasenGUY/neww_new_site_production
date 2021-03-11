@@ -97,24 +97,38 @@ export function observeEl(el, config, callBack) {
 export function loaderFunc(ldrObj){
     // function that starts loader or removes loader 
     
-    // select loader
-    const loader = document.querySelector(ldrObj.sel);
+    if (typeof ldrObj.el == 'string' || ldrObj.el instanceof String){
+        
+        // select loader if not selected already
+        const loader = document.querySelector(ldrObj.el); 
+    } else {
+        const loader = ldrObj.el; 
+    }
 
     // deactivate loader if settings is deactivate
-    if (ldrObj.deactivate == "deactivate"){
+    if (ldrObj.deactivate == true){
         
         // hide loader and remove settings to parent element
-        loader.classList.toggle(ldrObj.deactivate);
-        loader.parentElement.classList.remove(ldrObj.parentSettings);
+        (()=>{
+            return new Promise((resolve)=> {
+                loader.classList.toggle(ldrObj.deactivateClass);
+                resolve(true);
+            })
+        })().then( (finished) => {
+            if (finished == true){
+                setTimeout(ldrObj.wait, () => {
+                    loader.remove();
+                })
+            }
+        })
     
     // activate if settings are not deactivate
     } else {
         // select and add settings to inject target 
         const injTarget = document.querySelector(ldrObj.injectTarget)
         injTarget.classList.append(ldrObj.parentSettings);
-        loader.classList.toggle(ldrObj.deactivate);
-        injTarget.append(loader);
+        ldrObj.el.classList.toggle(ldrObj.deactivate);
+        injTarget.append(ldrObj.el);
     }
-    
     return 0;
 }

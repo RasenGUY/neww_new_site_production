@@ -58,9 +58,11 @@ window.onload = (()=>{
         
         // run loader functon
         f.loaderFunc({
-            sel: "#loader", 
-            parentSettings: "loader-settings",
-            deactivate: "deactivate"
+            el: "#loader", 
+            injTarget: "body", 
+            wait: 1000, 
+            deactivateClass: "deactivate",
+            deactivate: true
         });
     }
 
@@ -151,10 +153,11 @@ if (window.location.pathname === "/gallery.html"){
             
             await gallery.initialize(false, observer);
             observer.lb = new SimpleLightbox("a.gal-item");
+            
             // deactivate loader
             f.loaderFunc({
-                injectTarget: "body",
                 sel: "#loader", 
+                injectTarget: "body",
                 parentSettings: "loader-settings",
                 deactivate: "deactivate"
             });

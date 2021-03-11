@@ -125,8 +125,8 @@
 }
 
 .loader-wrapper {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   opacity: 1;
   position: absolute;
   top: 0;
@@ -169,7 +169,8 @@
 .loader-wrapper .loader span:last-child {
   animation: loader-jump 0.75s ease-in-out infinite;
 }
-.loader-wrapper.deactivate {
+
+#loader.deactivate {
   opacity: 0;
   visibility: collapse;
 }
@@ -630,7 +631,6 @@ nav#nav-mobile-links::before {
 
 #index-s-two .bg-image {
   background-attachment: initial;
-  /* background-image: url("/static/images/home/jpeg_web/compressed/travel_5.jpg"); */
   background-image: url("/static/images/jpeg/compressed/index_s_two-1_web.jpg");
   background-origin: border-box;
   background-position: center;
