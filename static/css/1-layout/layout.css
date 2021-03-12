@@ -283,7 +283,7 @@ main#main #index-s-one > div:nth-child(2) .img-box-wrapper .image-box {
 }
 main#main #index-s-two {
   height: 100vh;
-  margin-top: 0rem;
+  margin-top: 1rem;
 }
 @media (min-width: 1175px) and (max-width: 1405px) {
   main#main #index-s-two {
