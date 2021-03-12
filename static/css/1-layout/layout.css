@@ -292,7 +292,7 @@ main#main #index-s-two {
 }
 @media only screen and (min-width: 1405px) {
   main#main #index-s-two {
-    margin-top: clamp(0rem, -133.1052631579rem + 94.7368421053vw, 9rem);
+    margin-top: clamp(0rem, -118.3157894737rem + 84.2105263158vw, 8rem);
   }
 }
 @media only screen and (max-width: 768px) {

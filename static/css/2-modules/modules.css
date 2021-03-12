@@ -146,6 +146,7 @@
   display: flex;
   padding: 150px;
 }
+
 .loader-wrapper .loader span {
   display: block;
   width: 20px;
