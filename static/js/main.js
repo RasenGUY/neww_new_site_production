@@ -88,22 +88,29 @@ window.onload = (()=>{
 
     
     // animate circles in svg
-    const svgS = document.querySelectorAll(".svg-image.animate"); 
-
+    const svgS = document.querySelectorAll(".svg-image.animate");
+    
     for (let shape of svgS){
-        (()=>{
-            return new Promise((resolve)=>{
-                
-                let svgCircles;
         
+        (()=>{
+            return new Promise((resolve)=> {
                 // wait for objects to finish loading
-                shape.addEventListener( 'load', () => {
-                    svgCircles = shape.contentDocument.querySelectorAll(".svg-circle");
-                    resolve(svgCircles); 
-                });
-
+                let svgCircles = shape.contentDocument.querySelectorAll(".svg-circle");
+                
+                let loaded = false; 
+                while(loaded = false){
+                    if (svgCircles == null || svgCircles == undefined){
+                        svgCircles = shape.contentDocument.querySelectorAll(".svg-circle")
+                        continue
+                    }
+                    if (svgCircles != null || svgCriclces == undefined){
+                        loaded = true;
+                    }
+                } 
+                resolve(svgCircles);
             })
         })().then((svgCircles)=>{
+
             let count = 1;
             for (let circ of svgCircles){
                 if (count % 2 == 0){
@@ -114,10 +121,13 @@ window.onload = (()=>{
                     gsap.to(circ, {x:30, duration: 1.5, repeat:-1, yoyo:true, ease:"sine.inOut"})
                 }
                 count++; 
-            }
+            }    
         })
-        
+
+
+    
     }
+
 
 })()
 
