@@ -5,7 +5,6 @@ import * as c from "./carousel.js";
 import * as gal from "./gallery.js";
 import * as an from "./animations.js";
 
-
 // function to be run after the whole page is loaded 
 window.onload = (()=>{
 
@@ -46,8 +45,7 @@ window.onload = (()=>{
     });
     
     // initialize carousel instance for each carousel on the site
-    const
-    carousels = document.querySelectorAll(".carousel-wrapper"); // all carousels
+    const carousels = document.querySelectorAll(".carousel-wrapper"); // all carousels
     carousels.forEach( (carousel) => {
         const carou = new c.Carousel(carousel);
         carou.initCarousel();
@@ -60,9 +58,10 @@ window.onload = (()=>{
         f.loaderFunc({
             el: "#loader", 
             injTarget: "body", 
-            wait: 1000, 
-            deactivateClass: "deactivate",
-            deactivate: true
+            wait: 1000,
+            settings: "loader-settings",
+            turnOffClass: "deactivate",
+            turnOff: true
         });
     }
 
@@ -89,12 +88,22 @@ window.onload = (()=>{
 
     
     // animate circles in svg
+    const svgS = document.querySelectorAll(".svg-image.animate"); 
 
-    window.addEventListener("DOMContentLoaded", () => {
-        const svgS = document.querySelectorAll(".svg-image.animate"); 
+    for (let shape of svgS){
+        (()=>{
+            return new Promise((resolve)=>{
+                
+                let svgCircles;
+        
+                // wait for objects to finish loading
+                shape.addEventListener( 'load', () => {
+                    svgCircles = shape.contentDocument.querySelectorAll(".svg-circle");
+                    resolve(svgCircles); 
+                });
 
-        for (let shape of svgS){
-            const svgCircles = shape.contentDocument.querySelectorAll(".svg-circle");
+            })
+        })().then((svgCircles)=>{
             let count = 1;
             for (let circ of svgCircles){
                 if (count % 2 == 0){
@@ -106,8 +115,9 @@ window.onload = (()=>{
                 }
                 count++; 
             }
-        }
-    }); 
+        })
+        
+    }
 
 })()
 
@@ -156,10 +166,12 @@ if (window.location.pathname === "/gallery.html"){
             
             // deactivate loader
             f.loaderFunc({
-                sel: "#loader", 
-                injectTarget: "body",
-                parentSettings: "loader-settings",
-                deactivate: "deactivate"
+                el: "#loader", 
+                injTarget: "body",
+                wait: 1000,
+                settings: "loader-settings",
+                turnOffClass: "deactivate",
+                turnOff: true
             });
                         
         

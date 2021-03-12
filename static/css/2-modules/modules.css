@@ -136,8 +136,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: collapse, opacity, 1.5s ease-in-out;
+  transition: collapse, opacity, 1s ease-in-out;
 }
+
 .loader-wrapper .loader {
   text-align: center;
   vertical-align: middle;
@@ -170,7 +171,7 @@
   animation: loader-jump 0.75s ease-in-out infinite;
 }
 
-#loader.deactivate {
+.loader-wrapper.deactivate {
   opacity: 0;
   visibility: collapse;
 }

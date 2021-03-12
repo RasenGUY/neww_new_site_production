@@ -88,7 +88,7 @@ export function Animation (baseSet) {
 
             if (navBtn.dataset.href !== undefined){ // automatically add scrollTo target
                 
-                if (obj.set == null){ // create an object for scrollTo settings if it doesn't exist yet
+                if (obj.set == null){ // create an object for scrollTo settings if it does'nt exist yet
                     obj.set= {};
                 }
 

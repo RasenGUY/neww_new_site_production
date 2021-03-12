@@ -95,40 +95,63 @@ export function observeEl(el, config, callBack) {
 
 // loader function 
 export function loaderFunc(ldrObj){
-    // function that starts loader or removes loader 
-    
-    if (typeof ldrObj.el == 'string' || ldrObj.el instanceof String){
+    // function that creates and removes loaders 
+
+    if (typeof ldrObj.el === "string" || ldrObj.el instanceof String){
         
         // select loader if not selected already
         const loader = document.querySelector(ldrObj.el); 
+        
     } else {
+        
+        // select loader if not selected already
         const loader = ldrObj.el; 
     }
 
     // deactivate loader if settings is deactivate
-    if (ldrObj.deactivate == true){
+    if (ldrObj.turnOff == true){
         
         // hide loader and remove settings to parent element
         (()=>{
             return new Promise((resolve)=> {
-                loader.classList.toggle(ldrObj.deactivateClass);
+                loader.querySelector('.loader-wrapper').classList.toggle(ldrObj.turnOffClass);
                 resolve(true);
             })
         })().then( (finished) => {
+
             if (finished == true){
-                setTimeout(ldrObj.wait, () => {
-                    loader.remove();
-                })
-            }
+                loader.parentElement.classList.remove(ldrObj.settings); // removes loader settings from injectTarget
+                setTimeout(() => { 
+                    loader.remove(); // remove the loader itself after the turnOff animation finishes
+                }, ldrObj.wait);
+            };
+
         })
     
     // activate if settings are not deactivate
     } else {
-        // select and add settings to inject target 
-        const injTarget = document.querySelector(ldrObj.injectTarget)
-        injTarget.classList.append(ldrObj.parentSettings);
-        ldrObj.el.classList.toggle(ldrObj.deactivate);
-        injTarget.append(ldrObj.el);
+        
+        const injTarget = document.querySelector(ldrObj.injTarget); 
+        
+        // create loader
+        (()=>{
+            return new Promise((resolve)=> {
+                const loader = document.createElement("div");
+                const loaderWrapper = document.createElement("div");
+                const loaderClass = document.createElement("div");
+                
+                loaderWrapper.className += " " + "loader-wrapper";
+                loaderClass.className += " " + "loader";
+                loaderWrapper.appendChild(loaderClass);
+                loader.appendChild(loaderWrapper)
+                loader.id = "loader"; 
+                // still need to add functionality for creating the body of the loader
+                resolve(loader);
+            })
+        })().then((loader) => {
+            injTarget.appendChild(loader);
+            injTarget.className += " " + ldrObj.settings;
+        })
     }
     return 0;
 }
