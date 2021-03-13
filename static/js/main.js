@@ -106,7 +106,7 @@ window.onload = (()=>{
                     if (svgCircles != null || svgCriclces == undefined){
                         loaded = true;
                     }
-                } 
+                } // try bubbling method instead of while loop
                 resolve(svgCircles);
             })
         })().then((svgCircles)=>{
@@ -122,10 +122,7 @@ window.onload = (()=>{
                 }
                 count++; 
             }    
-        })
-
-
-    
+        })    
     }
 
 
