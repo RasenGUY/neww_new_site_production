@@ -91,28 +91,9 @@ window.onload = (()=>{
     const svgS = document.querySelectorAll(".svg-image.animate");
     
     for (let shape of svgS){
-        
-        (()=>{
-            return new Promise((resolve)=> {
-                // wait for objects to finish loading
-                let svgCircles = shape.contentDocument.querySelectorAll(".svg-circle");
-                
-                let loaded = false; 
-                while(loaded = false){
-                    if (svgCircles == null || svgCircles == undefined){
-                        svgCircles = shape.contentDocument.querySelectorAll(".svg-circle")
-                        continue
-                    }
-                    if (svgCircles != null || svgCriclces == undefined){
-                        loaded = true;
-                    }
-                } // try bubbling method instead of while loop
-                resolve(svgCircles);
-            })
-        })().then((svgCircles)=>{
-
+        shape.addEventListener("load", (e)=>{
             let count = 1;
-            for (let circ of svgCircles){
+            for (let circ of e.target.contentDocument.querySelectorAll(".svg-circle")){
                 if (count % 2 == 0){
                     gsap.to(circ, {y:30, duration: 1.5, repeat:-1, yoyo:true, ease:"sine.inOut"});
                 } else if (count % 3 == 0) {
@@ -121,10 +102,10 @@ window.onload = (()=>{
                     gsap.to(circ, {x:30, duration: 1.5, repeat:-1, yoyo:true, ease:"sine.inOut"})
                 }
                 count++; 
-            }    
-        })    
+            }
+        })
     }
-
+    
 
 })()
 
