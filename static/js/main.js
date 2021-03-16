@@ -102,8 +102,11 @@ window.onload = (()=>{
                     gsap.to(circ, {x:30, duration: 1.5, repeat:-1, yoyo:true, ease:"sine.inOut"})
                 }
                 count++; 
-            }
+            }    
+            
         })
+
+
     }
     
 
@@ -143,7 +146,7 @@ if (window.location.pathname === "/gallery.html"){
     };
     
     // initiate gallery 
-    const gallery = new gal.Gallery(galWrapper, 60, "https://picsum.photos/", imgSz);
+    const gallery = new gal.Gallery(galWrapper, 30, "https://picsum.photos/", imgSz);
     const observer = f.observeEl(gallery.wrapper, config, observerCallB); // intialize observer
     (async ()=>{
 
